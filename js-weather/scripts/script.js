@@ -1,6 +1,6 @@
 'use strict';
 
-// 非同期処理を関数(ACQUIRE_DATA)に格納
+// 非同期処理を定数関数(ACQUIRE_DATA)に格納
 const ACQUIRE_DATA = async (forecastFor) => {
   // 各パラメータを定数に格納
   const LANG = 'ja';
@@ -41,7 +41,7 @@ const ACQUIRE_DATA = async (forecastFor) => {
   CURRENT_TEMP.textContent = TEMPERATURE + '℃';
 }
 
-// プルダウンで選択肢を変更した時点で関数(ACQUIRE_DATA)を実行
+// プルダウンで選択肢を変更した時点で定数関数(ACQUIRE_DATA)を実行
 const SELECT_CITY = document.getElementById('select-city');
 SELECT_CITY.addEventListener('change', (e) => {
   // 選択されたオプションの値を定数に格納
