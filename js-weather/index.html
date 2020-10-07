@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <title>世界の天気</title>
+  <style>
+    .wrapper { text-align: center; }
+    .city-options { padding: 10px; }
+    .wrapper { padding: 20px; }
+    p { font-size: 20px; }
+    span, img { vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>世界の天気</h1>
+    <div>
+      <select class="city-options" id="select-city">
+        <option value="2643743">ロンドン</option>
+        <option value="1850144">東京</option>
+        <option value="2988507">パリ</option>
+        <option value="5128581">ニューヨーク</option>
+        <option value="1643084">インドネシア</option>
+      </select>
+    </div>
+    <div>
+      <p>地域： <span id="current-city"></span></p>
+      <p>現在の天気： <span id="weather"></span></p>
+      <p><span>空の様子：</span><img id="weather-condition" alt="空の様子"></p>
+      <p>気温： <span id="temperature"></span></p>
+      <script src="./scripts/script.js"></script>
+    </div>
+  </div>
+</body>
+</html>
